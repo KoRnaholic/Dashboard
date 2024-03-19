@@ -13,7 +13,9 @@ const DataList = ({ data, title }) => {
           </div>
         ))}
       </div>
-      <a>View all artists</a>
+      <a style={{ cursor: "pointer" }} href="/">
+        View all artists
+      </a>
     </div>
   );
 };

@@ -5,10 +5,17 @@ import Logo from "./../../assets/logo";
 import Settings from "../../dashboard/Settings";
 const Header = () => {
   return (
-    <header className="h-screen">
+    <header
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+      className="h-screen"
+    >
       <Logo />
       <nav>
-        <ul className="flex-col">
+        <ul className="nav-col">
           {nav.map((item, index) => (
             <NavItem key={index} item={item} />
           ))}
